@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panda Coin - Cryptocurrency Landing Page">
+    <meta name="keywords" content="cryptocurrency, panda coin, blockchain, crypto">
+    <title>Panda Coin - Home</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo2.ico') }}" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section clearfix">
+        <div class="container-fluid">
+            <a href="index.html" class="site-logo">
+                <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Panda Coin Logo">
+            </a>
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section end -->
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 hero-text">
+                    <h2>Invest in <span>Panda Coin</span><br>Your Future in Cryptocurrency</h2>
+                    <h4>Use the most innovative blockchain technology to grow your images.</h4>
+                    <form class="hero-subscribe-form">
+                        <input type="text" placeholder="Enter your email">
+                        <button class="site-btn">Get Started</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Panda Coin Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Features Section -->
+    <section class="features-section spad" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Panda Coin Features</h2>
+                <p>Explore how Panda Coin can revolutionize the way you manage your investments.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <div class="icon-box">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Secure Transactions</h4>
+                        <p>Highly secure blockchain technology protects your images.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature">
+                    <div class="icon-box">
+                        <i class="fa fa-wallet"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Easy Wallet Integration</h4>
+                        <p>Integrate Panda Coin with any wallet for smooth transactions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature">
+                    <div class="icon-box">
+                        <i class="fa fa-exchange"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Instant Exchange</h4>
+                        <p>Exchange Panda Coin quickly and easily on global markets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section end -->
+
+    <!-- Live Cryptocurrency Prices Section -->
+    <section class="crypto-prices-section spad" id="live-prices">
+        <div class="container">
+            <div class="section-title">
+                <h2>Live Cryptocurrency Prices</h2>
+                <p>Check out the live prices for popular cryptocurrencies updated in real-time.</p>
+            </div>
+            <div class="row" id="crypto-prices">
+                <!-- Prices will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    <!-- Live Prices Section end -->
+
+    <!-- Call to Action Section -->
+    <section class="cta-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2>Join the Panda Coin Network Today</h2>
+                    <p>Don’t miss out on the future of cryptocurrency. Join our growing network and start trading.</p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="signup.html" class="site-btn sb-gradients">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action Section end -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                        <h4>About Panda Coin</h4>
+                        <p>Panda Coin is a scalable, secure, and highly liquid cryptocurrency designed to revolutionize the digital asset industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Email: info@pandacoin.com</li>
+                            <li>Phone: +123-456-7890</li>
+                            <li>Address: 123 Crypto Street, Blockchain City</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- JavaScript Files -->
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pricesContainer = document.getElementById('crypto-prices');
+
+            // Fetch live cryptocurrency prices from CoinGecko API
+            async function fetchCryptoPrices() {
+                try {
+                    const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=5&page=1');
+                    const data = await response.json();
+
+                    // Clear previous data
+                    pricesContainer.innerHTML = '';
+
+                    // Loop through the data and display each coin's price
+                    data.forEach(coin => {
+                        const priceCard = `
+                            <div class="col-md-4 crypto-card">
+                                <div class="crypto-card-content">
+                                    <img src="${coin.image}" alt="${coin.name}" class="crypto-icon">
+                                    <h4>${coin.name}</h4>
+                                    <p>Price: $${coin.current_price}</p>
+                                    <p>Change (24h): ${coin.price_change_percentage_24h.toFixed(2)}%</p>
+                                </div>
+                            </div>
+                        `;
+
+                        pricesContainer.innerHTML += priceCard;
+                    });
+                } catch (error) {
+                    console.error("Error fetching live prices:", error);
+                }
+            }
+
+            // Fetch prices on page load
+            fetchCryptoPrices();
+
+            // Optional: Refresh prices every minute
+            setInterval(fetchCryptoPrices, 60000);
+        });
+    </script>
+</body>
+</html>

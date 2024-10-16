@@ -1,0 +1,330 @@
+/* =================================
+------------------------------------
+  Panda Coin - Cryptocurrency Landing Page
+------------------------------------
+  Theme: Panda-themed (black, white, gray)
+  Version: 1.0
+------------------------------------
+ ====================================*/
+
+/* Global Theme Colors */
+:root {
+    --primary-color: #000000;   /* Black */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #4d4d4d;    /* Dark Gray */
+    --highlight-color: #bfbfbf; /* Light Gray */
+    --button-color: #eec344;    /* Accent Color for Buttons */
+}
+
+/* Reset Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--accent-color);
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Buttons */
+.site-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--button-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.site-btn:hover {
+    background-color: var(--button-color);
+    color: var(--primary-color);
+}
+
+.site-btn.sb-gradients {
+    background-color: var(--button-color);
+    border: none;
+}
+
+.site-btn.sb-gradients:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Header Section */
+.header-section {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header-section .site-logo img {
+    max-height: 50px;
+}
+
+.main-menu {
+    float: right;
+}
+
+.menu-list {
+    list-style: none;
+    margin-right: 0;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu-list li a {
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: var(--button-color);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 900px;
+    padding-top: 260px;
+    background-color: var(--secondary-color);
+}
+
+.hero-section h2 {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero-section h2 span {
+    color: var(--button-color); /* Highlight text */
+}
+
+.hero-section h4 {
+    color: var(--accent-color);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-subscribe-form input[type="text"] {
+    padding: 10px 20px;
+    width: 70%;
+    border: 2px solid var(--highlight-color);
+    border-radius: 50px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.hero-subscribe-form button {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-subscribe-form button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Features Section */
+.features-section {
+    padding: 100px 0;
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.features-section .section-title {
+    margin-bottom: 50px;
+}
+
+.features-section .icon-box {
+    font-size: 48px;
+    color: var(--button-color);
+    margin-bottom: 20px;
+}
+
+.feature-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    color: var(--accent-color);
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 100px 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    color: var(--highlight-color);
+    margin-bottom: 40px;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.footer-widget h4 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.footer-widget p, .footer-widget ul {
+    color: var(--highlight-color);
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+    color: var(--secondary-color);
+}
+
+.footer-widget ul li a:hover {
+    color: var(--button-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding-top: 150px;
+    }
+
+    .hero-section h2 {
+        font-size: 40px;
+    }
+
+    .hero-section h4 {
+        font-size: 18px;
+    }
+
+    .hero-subscribe-form input[type="text"] {
+        width: 60%;
+    }
+}
+
+
+/* Live Cryptocurrency Prices Section */
+.crypto-prices-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+.crypto-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--highlight-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #fde884;
+    border-style: solid;
+}
+
+.crypto-card-content {
+    padding: 20px;
+}
+
+.crypto-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.crypto-card h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.crypto-card p {
+    color: var(--accent-color);
+    font-size: 16px;
+}
